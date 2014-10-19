@@ -1,15 +1,15 @@
 Introduction
 ============
 
-Full stack development definition
----------------------------------
+Definition
+----------
 The industry definition of the term is a engineer who can work on different
 level of the stack, and by stack they mean the different components. The
 components could be in the front-end or the back-end of the system. As simple as
 resizing an image or text in the webpage, or as complex as patching the kernel.
 
 System parts
-------------
+^^^^^^^^^^^^
 A. Back-end
     #. Operating System (OS).
     #. Firewall.
@@ -24,5 +24,12 @@ A. Back-end
     #. JavaScript.
     #. Dart.
 
+Also, The developer should make him/her self familiar with internationalization
+and localization solution, network protocols, and data serializer methods. The
+main objective of full stack engineer is to keep every part of the system
+running smoothly.
+
 .. figure:: _static/stackoverflow.png
-  :alt: This image shows a job position at stackoverflow® definition of the term.
+    :alt: stackoverflow job post
+
+    This image shows a job position at stackoverflow definition of the term.
