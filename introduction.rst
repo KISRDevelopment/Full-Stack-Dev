@@ -32,4 +32,4 @@ running smoothly.
 .. figure:: _static/stackoverflow.png
     :alt: stackoverflow job post
 
-    This image shows a job position at stackoverflow definition of the term.
+    This image shows a job position at `stackoverflow <http://stackoverflow.com/>`_ definition of the term.
