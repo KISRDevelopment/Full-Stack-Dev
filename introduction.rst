@@ -33,3 +33,10 @@ running smoothly.
     :alt: stackoverflow job post
 
     This image shows a job position at `stackoverflow <http://stackoverflow.com/>`_ definition of the term.
+
+Current application architecture
+--------------------------------
+The new applications are developed to be installed in mobile devices or hosted
+on the web. This trend caused by the increase of internet speed, fast growing
+social networks, and fast applications. This trend created the need to rethink
+application development from.
