@@ -113,16 +113,16 @@ Below are a list of important commands that you should be comfortable with.
 - sort
 
 
-Configuring software
---------------------
+Software Package Managers
+-------------------------
 .. todo::
 
-Text Editors
-------------
+Editors
+-------
 .. todo::
 
-Integrated development environment
-----------------------------------
+Software Configuration
+----------------------
 .. todo::
 
 Documentation
