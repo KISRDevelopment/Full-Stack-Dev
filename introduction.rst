@@ -47,7 +47,12 @@ many tasks to built a richer web application. An example of this would be
 `AngularJS <https://angularjs.org/>`_,
 `React <http://facebook.github.io/react/index.html>`_, and many more.
 
-These changes improve the web application substantially, and the changes led by
+These changes improve the web application substantially, and they were led by
 the fast growing web frameworks e.g. `NodeJS <http://nodejs.org/>`_,
 `Django <https://www.djangoproject.com/>`_,
-`RoR <http://rubyonrails.org/>`_ ...etc.
+`RoR <http://rubyonrails.org/>`_ ...etc. Each one of them focused on one problem
+or more and provided their solution; IO bound, maintainability and scalability
+of the web application ..etc.
+
+.. figure:: _static/aws.png
+    :alt: AWS load balancer architecture 
