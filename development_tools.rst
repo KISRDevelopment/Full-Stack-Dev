@@ -46,63 +46,69 @@ up. ``ls`` a command to list the contant of the current directory.
 
 Important commands
 ^^^^^^^^^^^^^^^^^^
+As you might expect, anything that you can do in the GUI you can do in the
+command line. CLI has many Shells e.g. `Bourne Shell
+<http://en.wikipedia.org/wiki/Bourne_shell>`_,
+`Korn SHell <http://en.wikipedia.org/wiki/Korn_shell>`_,
+`Bourne_Agine_SHell <http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29>`_
+...etc. Shells are program that help you execute commands on the computer.
+They have a special language, and they provide basic programming capabilities.
+Below are a list of important commands that you should be comfortable with.
 
-ls
-~~
+- | ls
+  | Lists the contant of the current directory
+  | possible usage:
+  | ``ls -a`` to list all files and directory including hiding directory or ``dotfiles``
+  | ``ls -l`` to list the files and directory with more information about their permissions, owner, group that owns it, disk size and creation date
 
-pwd
-~~~
+- | pwd
+  | Stands for Print Working Directory
+  | pwd prints the current working directory from ``/`` or ``root directory``
 
-cd
-~~
+- | cd
+  | Change Directory
+  | Once invoked it will change your working directory to a new one
+  | possible usage:
+  | ``cd /tmp`` to change to the temporary directory
 
-cat
-~~~
+- | cat
+  | Concatenate files and prints them to ``stdout``
+  | possible usage:
+  | ``cat file1 file2``
+  | ``cat file1`` to print the contant of file1 to ``stdout``
 
-man
-~~~
+- | man
+  | Return the manual for any command in the system
+  |
 
-rm
-~~
+- rm
 
-mv
-~~
+- mv
 
-cp
-~~
+- cp
 
-grep
-~~~~
+- grep
 
-ssh
-~~~
+- ssh
 
-scp
-~~~
+- scp
 
-nano
-~~~~
+- nano
 
-find
-~~~~
+- find
 
-diff
-~~~~
+- diff
 
-comm
-~~~~
+- comm
 
-head
-~~~~
+- head
 
-tail
-~~~~
+- tail
 
-less
-~~~~
+- less
 
-sort
-~~~~
+- sort
+
 
 Configuring software
 --------------------
