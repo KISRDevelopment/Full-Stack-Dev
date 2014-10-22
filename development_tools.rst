@@ -3,7 +3,7 @@ Phase I: Development tools
 In this section we will talk about the essential tools that every developer uses.
 
 Virtual Machine
-----------------
+---------------
 
 Definition
 ^^^^^^^^^^
