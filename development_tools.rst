@@ -80,7 +80,11 @@ Below are a list of important commands that you should be comfortable with.
 - | man
   | Return the help manual for any command in the system.
 
-- rm
+- | rm
+  | Removes a file or directory.
+  | possible usage:
+  | ``rm /path/to/file1`` to delete file1
+  | ``rm -r /path/to/dir1`` to recursively delete dir1 and all its contents
 
 - mv
 
