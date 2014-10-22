@@ -7,10 +7,10 @@ Virtual Machine
 
 Definition
 ^^^^^^^^^^
-    In computing, a virtual machine (VM) is an emulation of a particular
-    computer system. Virtual machines operate based on the computer architecture
-    and functions of a real or hypothetical computer, and their implementations
-    may involve specialized hardware, software, or a combination of both [#w1]_.
+In computing, a virtual machine (VM) is an emulation of a particular
+computer system. Virtual machines operate based on the computer architecture
+and functions of a real or hypothetical computer, and their implementations
+may involve specialized hardware, software, or a combination of both [#w1]_.
 
 Software
 ^^^^^^^^
@@ -56,7 +56,7 @@ They have a special language, and they provide basic programming capabilities.
 Below are a list of important commands that you should be comfortable with.
 
 - | ls
-  | Lists the contant of the current directory
+  | Lists the contents of the current directory
   | possible usage:
   | ``ls -a`` to list all files and directory including hiding directory or ``dotfiles``
   | ``ls -l`` to list the files and directory with more information about their permissions, owner, group that owns it, disk size and creation date
@@ -75,11 +75,10 @@ Below are a list of important commands that you should be comfortable with.
   | Concatenate files and prints them to ``stdout``
   | possible usage:
   | ``cat file1 file2``
-  | ``cat file1`` to print the contant of file1 to ``stdout``
+  | ``cat file1`` to print the content of file1 to ``stdout``
 
 - | man
-  | Return the manual for any command in the system
-  |
+  | Return the help manual for any command in the system.
 
 - rm
 
