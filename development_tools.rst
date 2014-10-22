@@ -1,6 +1,6 @@
 Phase I: Development tools
 ==========================
-In this section will talk about the essential tools that every developer uses.
+In this section we will talk about the essential tools that every developer uses.
 
 Virtual Machine
 ----------------
@@ -16,21 +16,21 @@ Software
 ^^^^^^^^
 
 - VirtualBox
-
 - VMware
-
 - LinuxKVM
-
 - etc...
 
-We will focus entirely on `VirtualBox <https://www.virtualbox.org/>`_. After you
-download and install the virtualization software you need to download an image
-of an operating system. We will use `Ubuntu <http://www.ubuntu.com/>`_ in this
-course.
+We will focus entirely on `VirtualBox <https://www.virtualbox.org/>`_.
 
-After you download the `ISO image <http://www.ubuntu.com/download/desktop/thank-you?country=--&version=14.04.1&architecture=amd64>`_
-you need to ``Create a Virtual Machine``, configure the RAM to be allocated for
-it, configure a hard drive for the image,
+Instructions
+^^^^^^^^^^^^
+
+#. Download and install the VirtualBox
+#. Download an image of an operating system. We will use `Ubuntu <http://www.ubuntu.com/>`_
+   in this course. Download the `ISO image <http://www.ubuntu.com/download/desktop/thank-you?country=--&version=14.04.1&architecture=amd64>`_
+#. In VirtualBox ``Create a Virtual Machine``
+#. Configure the RAM to be allocated
+#. Configure a hard drive for the image
 
 Command Line Interface
 ----------------------
@@ -39,10 +39,10 @@ computer. CLI can retrive data from the current system or run a task on a remote
 server. Also, CLI provides a way to run periodic commands and runs long running
 commands in the background, ``Daemons``,.
 
-In this chapter, we will discover the import commands, and we will learn you to
+In this chapter, we will discover the import commands, and we will teach you to
 use them. After opening up a terminal in Ubuntu, type in the following command
 ``ls``. As you can see in the terminal, a list of files and directories showed
-up. ``ls`` a command to list the contant of the current directory.
+up. ``ls`` is the command to list the contents of the current directory.
 
 Important commands
 ^^^^^^^^^^^^^^^^^^
