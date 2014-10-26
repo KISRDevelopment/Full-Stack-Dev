@@ -152,7 +152,8 @@ Below are a list of important commands that you should be comfortable with.
 
 Exercises
 ^^^^^^^^^
-.. todo::
+Now, launch the terminal and create a directory called ``foo`` and change your
+path to it.
 
 
 Software Package Managers
