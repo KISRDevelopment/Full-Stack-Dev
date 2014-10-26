@@ -115,7 +115,27 @@ Below are a list of important commands that you should be comfortable with.
 
 Software Package Managers
 -------------------------
-.. todo::
+So far in the course we have learned how to set up a fresh Ubuntu virtual 
+machine and how to use some of the basic built in shell commands. Plain Ubuntu 
+is extremely powerful and we can do a lot with it but at some point, whether 
+we are setting up a development machine or a production server, we will need
+to install and manage software, tools, programming libraries, etc...
+As a devloper you'll often find yourself rapidly installing, configuring, testing,
+uninstalling, adjusting, reinstalling multiple version of multiple software
+packages.
+And if you don't keep track of them they can conflict with each other. 
+And break each other.
+And make your life miserable.
+
+Luckily, back in the stone-age of Linux (the 1990s), the combined efforts of many
+distressed developers resulted in the concept of a package manager!
+Package managers will search for and install or uninstall software on your system, 
+ensure that dependencies and conflicts are taken care of, and generally help you
+manage the software on your machine.
+
+Aptitude
+^^^^^^^^
+
 
 Editors
 -------
