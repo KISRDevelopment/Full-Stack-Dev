@@ -127,14 +127,40 @@ And if you don't keep track of them they can conflict with each other.
 And break each other.
 And make your life miserable.
 
-Luckily, back in the stone-age of Linux (the 1990s), the combined efforts of many
+Luckily, back in the stone-age of Linux (the 90s), the combined efforts of many
 distressed developers resulted in the concept of a package manager!
 Package managers will search for and install or uninstall software on your system, 
 ensure that dependencies and conflicts are taken care of, and generally help you
 manage the software on your machine.
 
-Aptitude
-^^^^^^^^
+- | **Aptitude**
+  | This is Linux's very powerful built-in package manager.
+  | Basic Usage:
+  | ``apt-get install <package-name>``
+
+- | **PIP**
+  | PIP is the software manager for Python libraries and packages.
+  | (PIP stands for "PIP Installs Python". Developers are weird)
+  | Basic Usage:
+  | ``pip install <python-package-name>``
+
+Exercises
+^^^^^^^^^
+#. Read the Aptitude man page
+#. Install PIP, python3, nginx using Aptitude
+#. Read the PIP help file ``pip help``
+#. Install django, selenium, uwsgi using PIP
+
+More Information:
+^^^^^^^^^^^^^^^^^
+There are many more package managers than we mentioned in this section.
+We would recomment looking at:
+
+- npm (node.js)
+- yum (Linux)
+- rpm (Linux)
+- homebrew (Mac OSX)
+- macports (Mac OSX)
 
 
 Editors
