@@ -112,6 +112,10 @@ Below are a list of important commands that you should be comfortable with.
 
 - sort
 
+Exercises
+^^^^^^^^^
+.. todo::
+
 
 Software Package Managers
 -------------------------
