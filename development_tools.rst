@@ -22,8 +22,8 @@ Software
 
 We will focus entirely on `VirtualBox <https://www.virtualbox.org/>`_.
 
-Instructions
-^^^^^^^^^^^^
+Exercises
+^^^^^^^^^
 
 #. Download and install the VirtualBox
 #. Download an image of an operating system. We will use `Ubuntu <http://www.ubuntu.com/>`_
@@ -55,62 +55,62 @@ command line. CLI has many Shells e.g. `Bourne Shell
 They have a special language, and they provide basic programming capabilities.
 Below are a list of important commands that you should be comfortable with.
 
-- | ls
+- | **ls**
   | Lists the contents of the current directory
   | possible usage:
   | ``ls -a`` to list all files and directory including hiding directory or ``dotfiles``
   | ``ls -l`` to list the files and directory with more information about their permissions, owner, group that owns it, disk size and creation date
 
-- | pwd
+- | **pwd**
   | Stands for Print Working Directory
   | pwd prints the current working directory from ``/`` or ``root directory``
 
-- | cd
+- | **cd**
   | Change Directory
   | Once invoked it will change your working directory to a new one
   | possible usage:
   | ``cd /tmp`` to change to the temporary directory
 
-- | cat
+- | **cat**
   | Concatenate files and prints them to ``stdout``
   | possible usage:
   | ``cat file1 file2``
   | ``cat file1`` to print the content of file1 to ``stdout``
 
-- | man
+- | **man**
   | Return the help manual for any command in the system.
 
-- | rm
+- | **rm**
   | Removes a file or directory.
   | possible usage:
   | ``rm /path/to/file1`` to delete file1
   | ``rm -r /path/to/dir1`` to recursively delete dir1 and all its contents
 
-- mv
+- **mv**
 
-- cp
+- **cp**
 
-- grep
+- **grep**
 
-- ssh
+- **ssh**
 
-- scp
+- **scp**
 
-- nano
+- **nano**
 
-- find
+- **find**
 
-- diff
+- **diff**
 
-- comm
+- **comm**
 
-- head
+- **head**
 
-- tail
+- **tail**
 
-- less
+- **less**
 
-- sort
+- **sort**
 
 Exercises
 ^^^^^^^^^
