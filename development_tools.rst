@@ -71,6 +71,10 @@ Below are a list of important commands that you should be comfortable with.
   | possible usage:
   | ``cd /tmp`` to change to the temporary directory
 
+- | mkdir
+  | Make Directory
+  | ``mkdir bar`` creates a directory called bar
+
 - | cat
   | Concatenate files and prints them to ``stdout``
   | possible usage:
@@ -86,31 +90,67 @@ Below are a list of important commands that you should be comfortable with.
   | ``rm /path/to/file1`` to delete file1
   | ``rm -r /path/to/dir1`` to recursively delete dir1 and all its contents
 
-- mv
+- | mv
+  | Moves files or directories to different location (path). Also it can be used
+  | to rename file or directories.
+  | ``mv file file.txt`` to rename
+  | ``mv Downloads/file.zip Documents/``
 
-- cp
+- | cp
+  | Copy file or directory from one location to another
+  | ``cp file1 Documents/``
+  | ``cp -R /tmp Documents/tmp``
 
-- grep
+- | grep
+  | Grep is a pattern search that uses
+  | `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_
+  | to look for a pattern
+  | in text. It's a powerful if you know regular expresion
+  | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
 
-- ssh
+- | ssh
+  | SecureShell is a program that connects you to remote computers and execute
+  | commands on them
+  | ``ssh alice@foo.com``
 
-- scp
+- | scp
+  | Secure copy like FTP but uses SSH protocol to transmit data
+  | ``scp words.txt alice@foo.com:Desktop/store``
 
-- nano
+- | nano
+  | Nano is an easy to use terminal text editor
 
-- find
+- | find
+  | Find is a powerful command. Take a look at the manual of ``find`` to see all
+  | the options that you can use with it
+  | ``find . -type f -name foo`` looks for a file that's named foo
 
-- diff
+- | diff
+  | Differences between two files. The command ``diff`` prints out the difference
+  | between two files
+  | ``diff v1/foo1 v2/foo1``
 
-- comm
+- | comm
+  | Common is a command that compares two files and print the common bytes
+  | between them
+  | ``comm v1/foo1 v2/foo1``
 
-- head
+- | head
+  | Head prints out first lines of a file
+  | ``head foo.txt``
 
-- tail
+- | tail
+  | Tail is simliar to head but it prints out the last lines of a file
+  | ``tail foo.txt``
 
-- less
+- | less
+  | Less is a file viewer, and it has search features. The name came from the
+  | Unix philosophy "Less is more, more is less"[#less]
+  | ``less foo.txt``
 
-- sort
+- | sort
+  | Sort sorts text
+  | ``sort foo``
 
 Exercises
 ^^^^^^^^^
@@ -134,3 +174,4 @@ Documentation
 .. todo::
 
 .. [#w1] `Wikipedia <http://en.wikipedia.org/wiki/Virtual_machine>`_
+.. [#less] `Less history <http://en.wikipedia.org/wiki/Less_%28Unix%29#History>`_
