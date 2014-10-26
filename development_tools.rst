@@ -102,9 +102,7 @@ Below are a list of important commands that you should be comfortable with.
   | ``cp -R /tmp Documents/tmp``
 
 - | grep
-  | Grep is a pattern search that uses
-  | `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_
-  | to look for a pattern
+  | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
   | in text. It's a powerful if you know regular expresion
   | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
 
