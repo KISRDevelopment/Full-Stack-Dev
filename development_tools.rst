@@ -22,8 +22,8 @@ Software
 
 We will focus entirely on `VirtualBox <https://www.virtualbox.org/>`_.
 
-Instructions
-^^^^^^^^^^^^
+Exercises
+^^^^^^^^^
 
 #. Download and install the VirtualBox
 #. Download an image of an operating system. We will use `Ubuntu <http://www.ubuntu.com/>`_
@@ -55,99 +55,97 @@ command line. CLI has many Shells e.g. `Bourne Shell
 They have a special language, and they provide basic programming capabilities.
 Below are a list of important commands that you should be comfortable with.
 
-- | ls
-  | Lists the contents of the current directory
-  | possible usage:
+- | **ls**
+  | Lists the contents of the current directory:
   | ``ls -a`` to list all files and directory including hiding directory or ``dotfiles``
   | ``ls -l`` to list the files and directory with more information about their permissions, owner, group that owns it, disk size and creation date
 
-- | pwd
-  | Stands for Print Working Directory
+- | **pwd**
+  | Stands for Print Working Directory:
   | pwd prints the current working directory from ``/`` or ``root directory``
 
-- | cd
-  | Change Directory
-  | Once invoked it will change your working directory to a new one
-  | possible usage:
+- | **cd**
+  | Change Directory.
+  | Once invoked it will change your working directory to a new one:
   | ``cd /tmp`` to change to the temporary directory
 
-- | mkdir
-  | Make Directory
+- | **mkdir**
+  | Make Directory:
   | ``mkdir bar`` creates a directory called bar
 
-- | cat
-  | Concatenate files and prints them to ``stdout``
-  | possible usage:
+- | **cat**
+  | Concatenate files and prints them to ``stdout``:
   | ``cat file1 file2``
   | ``cat file1`` to print the content of file1 to ``stdout``
 
-- | man
-  | Return the help manual for any command in the system.
+- | **man**
+  | Return the help manual for any command in the system:
+  | ``man shell-command`` 
 
-- | rm
-  | Removes a file or directory.
-  | possible usage:
+- | **rm**
+  | Removes a file or directory:
   | ``rm /path/to/file1`` to delete file1
   | ``rm -r /path/to/dir1`` to recursively delete dir1 and all its contents
 
-- | mv
+- | **mv**
   | Moves files or directories to different location (path). Also it can be used
-  | to rename file or directories.
+  | to rename file or directories:
   | ``mv file file.txt`` to rename
   | ``mv Downloads/file.zip Documents/``
 
-- | cp
-  | Copy file or directory from one location to another
+- | **cp**
+  | Copy file or directory from one location to another:
   | ``cp file1 Documents/``
   | ``cp -R /tmp Documents/tmp``
 
-- | grep
+- | **grep**
   | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
-  | in text. It's a powerful if you know regular expresion
+  | in text. It's a powerful if you know regular expresion:
   | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
 
-- | ssh
+- | **ssh**
   | SecureShell is a program that connects you to remote computers and execute
-  | commands on them
+  | commands on them:
   | ``ssh alice@foo.com``
 
-- | scp
-  | Secure copy like FTP but uses SSH protocol to transmit data
+- | **scp**
+  | Secure copy like FTP but uses SSH protocol to transmit data:
   | ``scp words.txt alice@foo.com:Desktop/store``
 
-- | nano
-  | Nano is an easy to use terminal text editor
+- | **nano**
+  | Nano is an easy to use terminal text editor:
+  | ``nano file1``
 
-- | find
+- | **find**
   | Find is a powerful command. Take a look at the manual of ``find`` to see all
-  | the options that you can use with it
+  | the options that you can use with it:
   | ``find . -type f -name foo`` looks for a file that's named foo
 
-- | diff
+- | **diff**
   | Differences between two files. The command ``diff`` prints out the difference
-  | between two files
+  | between two files:
   | ``diff v1/foo1 v2/foo1``
 
-- | comm
+- | **comm**
   | Common is a command that compares two files and print the common bytes
-  | between them
+  | between them:
   | ``comm v1/foo1 v2/foo1``
 
-- | head
-  | Head prints out first lines of a file
+- | **head**
+  | Head prints out first lines of a file:
   | ``head foo.txt``
 
-- | tail
-  | Tail is simliar to head but it prints out the last lines of a file
+- | **tail**
+  | Tail is simliar to head but it prints out the last lines of a file:
   | ``tail foo.txt``
 
-- | less
+- | **less**
   | Less is a file viewer, and it has search features. The name came from the
-  | Unix philosophy "Less is more, more is less"[#less]
+  | Unix philosophy "Less is more, more is less"[#less]:
   | ``less foo.txt``
 
-- | sort
-  | Sort sorts text
+- | **sort**
+  | Sort sorts text:
   | ``sort foo``
 
 Exercises
@@ -179,13 +177,13 @@ manage the software on your machine.
 - | **Aptitude**
   | This is Linux's very powerful built-in package manager.
   | Basic Usage:
-  | ``apt-get install <package-name>``
+  | ``apt-get install package-name``
 
 - | **PIP**
   | PIP is the software manager for Python libraries and packages.
   | (PIP stands for "PIP Installs Python". Developers are weird)
   | Basic Usage:
-  | ``pip install <python-package-name>``
+  | ``pip install python-package-name``
 
 Exercises
 ^^^^^^^^^
