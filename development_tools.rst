@@ -141,7 +141,7 @@ Below are a list of important commands that you should be comfortable with.
 
 - | **less**
   | Less is a file viewer, and it has search features. The name came from the
-  | Unix philosophy "Less is more, more is less"[#less]:
+  | Unix philosophy "Less is more, more is less"[#less]_:
   | ``less foo.txt``
 
 - | **sort**
