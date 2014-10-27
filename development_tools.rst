@@ -1,19 +1,21 @@
+**************************
 Phase I: Development tools
-==========================
+**************************
+
 In this section we will talk about the essential tools that every developer uses.
 
 Virtual Machine
----------------
+===============
 
 Definition
-^^^^^^^^^^
+----------
 In computing, a virtual machine (VM) is an emulation of a particular
 computer system. Virtual machines operate based on the computer architecture
 and functions of a real or hypothetical computer, and their implementations
 may involve specialized hardware, software, or a combination of both [#w1]_.
 
 Software
-^^^^^^^^
+--------
 
 - VirtualBox
 - VMware
@@ -23,7 +25,7 @@ Software
 We will focus entirely on `VirtualBox <https://www.virtualbox.org/>`_.
 
 Exercises
-^^^^^^^^^
+---------
 
 #. Download and install the VirtualBox
 #. Download an image of an operating system. We will use `Ubuntu <http://www.ubuntu.com/>`_
@@ -33,7 +35,8 @@ Exercises
 #. Configure a hard drive for the image
 
 Command Line Interface
-----------------------
+======================
+
 Command Line Interface or CLI is the fastest way of communicating with a
 computer. CLI can retrive data from the current system or run a task on a remote
 server. Also, CLI provides a way to run periodic commands and runs long running
@@ -45,7 +48,8 @@ use them. After opening up a terminal in Ubuntu, type in the following command
 up. ``ls`` is the command to list the contents of the current directory.
 
 Important commands
-^^^^^^^^^^^^^^^^^^
+------------------
+
 As you might expect, anything that you can do in the GUI you can do in the
 command line. CLI has many Shells e.g. `Bourne Shell
 <http://en.wikipedia.org/wiki/Bourne_shell>`_,
@@ -80,7 +84,7 @@ Below are a list of important commands that you should be comfortable with.
 
 - | **man**
   | Return the help manual for any command in the system:
-  | ``man shell-command`` 
+  | ``man shell-command``
 
 - | **rm**
   | Removes a file or directory:
@@ -102,6 +106,8 @@ Below are a list of important commands that you should be comfortable with.
   | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
   | in text. It's a powerful if you know regular expresion:
   | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
+
+.. seealso:: Take a look at the `Python Docs <https://docs.python.org/2/howto/regex.html>`_ for more information
 
 - | **ssh**
   | SecureShell is a program that connects you to remote computers and execute
@@ -148,14 +154,18 @@ Below are a list of important commands that you should be comfortable with.
   | Sort sorts text:
   | ``sort foo``
 
+- | **sudo**
+  | Super User DO is a command that escalate and run the giving command as **root**
+
+
 Exercises
-^^^^^^^^^
+---------
 Now, launch the terminal and create a directory called ``foo`` and change your
 path to it.
 
 
 Software Package Managers
--------------------------
+=========================
 So far in the course we have learned how to set up a fresh Ubuntu virtual
 machine and how to use some of the basic built in shell commands. Plain Ubuntu
 is extremely powerful and we can do a lot with it but at some point, whether
@@ -186,14 +196,14 @@ manage the software on your machine.
   | ``pip install pyfoo``
 
 Exercises
-^^^^^^^^^
+---------
 #. Read the Aptitude man page
 #. Install PIP, python3, nginx using Aptitude
 #. Read the PIP help file ``pip help``
 #. Install django, selenium, uwsgi using PIP
 
 More Information:
-^^^^^^^^^^^^^^^^^
+-----------------
 There are many more package managers than we mentioned in this section.
 We would recomment looking at:
 
@@ -204,15 +214,15 @@ We would recomment looking at:
 - macports (Mac OSX)
 
 Editors
--------
+=======
 .. todo::
 
 Software Configuration
-----------------------
+======================
 .. todo::
 
 Documentation
--------------
+=============
 .. todo::
 
 .. [#w1] `Wikipedia <http://en.wikipedia.org/wiki/Virtual_machine>`_
