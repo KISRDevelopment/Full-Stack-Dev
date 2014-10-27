@@ -177,13 +177,13 @@ manage the software on your machine.
 - | **Aptitude**
   | This is Linux's very powerful built-in package manager.
   | Basic Usage:
-  | ``apt-get install package-name``
+  | ``apt-get install foo-package``
 
 - | **PIP**
   | PIP is the software manager for Python libraries and packages.
   | (PIP stands for "PIP Installs Python". Developers are weird)
   | Basic Usage:
-  | ``pip install python-package-name``
+  | ``pip install pyfoo``
 
 Exercises
 ^^^^^^^^^
