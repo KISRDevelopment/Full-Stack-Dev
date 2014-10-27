@@ -38,10 +38,14 @@ replication of the development environment in production machines. This course
 will discuss best practices when it comes to design architecture of web applications.
 We will also compare between IAAS and PAAS and how to take advantage of them.
 
+
+Contents
+========
+
 .. toctree::
  introduction
  development_tools
- team_project_workflow
+ team_project_workflow/index
  complete_web_dev
  :maxdepth: 2
 
