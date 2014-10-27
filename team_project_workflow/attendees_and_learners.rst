@@ -8,6 +8,47 @@ or followed the tutorial in their own time.
 Workshops
 =========
 
+PyCon Ireland in Dublin, 13th October 2014
+------------------------------------------
+
+* Randal McGuckin <randal.mcguckin@gmail.com>
+* Laura Duggan https://github.com/labhra
+* Jenny McGee
+* Conor McGee <mcgeeco@tcd.ie> https://github.com/mcgeeco
+* Nadja Deininger https://github.com/machinelady
+* Andrew McCarthy
+* Brian McDonnell <https://github.com/brianmcdonnell/>
+* Brendan Cahill (https://github.com/brencahill/)
+* Adam Dickey
+* Paul O'Grady (Twitter: @paul_ogrady; GitHub: paulogrady)
+* Jenny DiMiceli - https://github.com/jdimiceli
+* Stephen Kerr
+* Wayne Tong
+* Vinicius Mayer (viniciusmayer@gmail.com) https://github.com/viniciusmayer
+* Dori Czapari https://github.com/doriczapari (@doriczapari)
+* Karl Griffin (karl_griffin@hotmail.com) https://github.com/karlgriffin
+
+
+PyCon UK in Coventry, 20th September 2014
+-----------------------------------------
+
+* Matthew Power https://github.com/mthpower
+* Brendan Oates <brenoates@gmail.com>
+* Waldek Herka (https://github.com/wherka)
+* Stephen Newey (@stevenewey) - https://github.com/stevenewey
+* Walter Kummer (work.walter at gmail.com)
+* Craig Barnes
+* Justin Wing Chung Hui
+* Davide Ceretti
+* Paul van der Linden https://github.com/pvanderlinden
+* Gary Martin https://github.com/garym
+* Cedric Da Costa Faro https://github.com/cdcf
+* Sebastien Charret <sebastien.charret@gmail.com> https://github.com/moerin
+* Nick Smith
+* Jonathan Lake-Thomas https://github.com/jonathlt
+* Ben Mansbridge
+* Glen Davies (@GlenDaviesDev) - https://github.com/glen442
+
 DjangoCon US in Portland, 5th September 2014
 --------------------------------------------
 
@@ -16,13 +57,17 @@ DjangoCon US in Portland, 5th September 2014
 * Patrick Beeson (@patrickbeeson) https://github.com/patrickbeeson
 * Vishal Shah -  https://github.com/shahv
 * Kevin Daum (@kevindaum, kevin.daum@gmail.com) https://github.com/kevindaum
-* Joseph Metzinger
 * Nasser AlSnayen (nasser.lc9@gmail.com) https://github.com/LC9
 * Nicholas Colbert (@45cali) 45cali@gmail.com
-* Kevin Daum (@kevindaum, kevin.daum@gmail.com) https://github.com/kevindaum
+* Chris Cauley https://github.com/chriscauley
+* Joe Larson (@joelarson)
+* Jeff Kile
+* Orlando Romero
+* Chad Hansen (chadgh@gmail.com) https://github.com/chadgh
 
 DjangoVillage in Orvieto, 14th June 2014
 ----------------------------------------
+
 * Gioele
 * Christian Barra (@christianbarra) https://github.com/barrachri
 * Luca Ippoliti https://github.com/lucaippo
@@ -35,6 +80,7 @@ DjangoVillage in Orvieto, 14th June 2014
 
 DjangoCon Europe on The Île des Embiez, 16th May 2014
 -----------------------------------------------------
+
 * Niclas Åhdén (niclas@brightweb.se) https://github.com/niclas-ahden
 * Sabine Maennel (sabine.maennel@gmail.com) http://github.com/sabinem
 * JB (Juliano Binder)
@@ -47,6 +93,7 @@ DjangoCon Europe on The Île des Embiez, 16th May 2014
 
 Dutch Django Association Sprint in Amsterdam, 22nd February 2014
 ----------------------------------------------------------------
+
 * Stomme poes (@stommepoes)
 * Rigel Di Scala (zedr) <zedr@zedr.com> http://github.com/zedr
 * Nikalajus Krauklis (@dzhibas) http://github.com/dzhibas
@@ -67,6 +114,7 @@ Dutch Django Association Sprint in Amsterdam, 22nd February 2014
 
 Django Weekend Cardiff, 7th February 2014
 -----------------------------------------
+
 * Jakub Jarosz (@qba73) jakub.s.jarosz@gmail.com https://github.com/qba73
 * Stewart Perrygrove
 * Adrian Chu
@@ -74,6 +122,7 @@ Django Weekend Cardiff, 7th February 2014
 
 PyCon Ireland in Dublin, 14th October 2013
 ------------------------------------------
+
 * Vincent Hussey vincent.hussey@opw.ie https://github.com/VincentHussey
 * Padraic Harley <@pauricthelodger> <padraic@thelodgeronline.com>
 * Paul Cunnane <paul.cunnane@gmail.com> https://github.com/paulcunnane
@@ -95,6 +144,7 @@ PyCon Ireland in Dublin, 14th October 2013
 
 PyCon UK in Coventry, 22nd September 2013
 -----------------------------------------
+
 * Adeel Younas <aedil12155@gmail.com>
 * Giles Richard Greenway github: augeas
 * Mike Gleen
@@ -129,6 +179,7 @@ PyCon UK in Coventry, 22nd September 2013
 
 DjangoCon US in Chicago, 2nd September 2013
 -------------------------------------------
+
 * Barbara Hendrick (bahendri)
 * Keith Edmiston <keith.edmiston@mccombs.utexas.edu>
 * David Garcia (davideire)
@@ -189,3 +240,6 @@ I followed the tutorial online
 * Ken Tam - 4th Jan 2014
 * Óscar M. Lage - http://github.com/oscarmlage
 * Bob Aalsma - https://github.com/BobAalsma/
+* Andy Venet - https://github.com/avenet/
+* Vathsala Achar - 22nd September, 2014
+* Amine Zyad <amizya@gmail.com> http://github.com/amizya

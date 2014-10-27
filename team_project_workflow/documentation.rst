@@ -13,7 +13,7 @@ For documentation, we'll use **Sphinx** to generate it, and **Read the Docs**
 to publish it. GitHub will be a helpful middleman.
 
 If you have a package for which you'd like to create documentation, you might
-as well start producing that right away. If not, you can do it do it in a new
+as well start producing that right away. If not, you can do it in a new
 dummy project.
 
 Set up your working environment
@@ -24,10 +24,10 @@ The virtualenv
 
 As usual, create and activate a new virtualenv::
 
-    $ virtualenv documentation-tutorial
+    virtualenv documentation-tutorial
     [...]
-    $ cd documentation-tutorial/
-    $ source bin/activate
+    cd documentation-tutorial/
+    source bin/activate
 
 
 The package or project
@@ -47,21 +47,25 @@ respectable.
 If you don't have an existing package that needs docs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you don't have a suitable existing package on GitHub, you'll need to create
+If you don't have a suitable existing package on GitHub, create
 a repository on GitHub the way you did before. Call it ``my-first-docs``. Then
 create a Git repository locally::
 
-    $ mkdir my-first-docs
-    $ cd my-first-docs/
-    $ git init
-    $ git remote add origin git@github.com:<your git username>/my-first-docs.git
+    mkdir my-first-docs
+    cd my-first-docs/
+    # Converts the directory into a git repository
+    git init
+    # Point this repo at the GitHub repo you just created
+    git remote add origin git@github.com:<your git username>/my-first-docs.git
+    # Create a new branch in which to do your work
+    git checkout -b first-docs
 
 Create a ``docs`` directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 And either way, create a ``docs`` directory for your docs to live in::
 
-    $ mkdir docs
+    mkdir docs
 
 Sphinx
 ======
@@ -105,9 +109,8 @@ Using Sphinx & reStructuredText
 reStructuredText elements
 -------------------------
 
-Sphinx uses reStructuredText. Start with
-http://sphinx-doc.org/rest.html#rst-primer, which will tell you most of what
-you need to know to get started. Keep it simple to start with - start with:
+Sphinx uses reStructuredText. http://sphinx-doc.org/rest.html#rst-primer will tell you most of what
+you need to know to get started. Focus on the basics:
 
 *   paragraphs
 *   lists
@@ -130,17 +133,17 @@ one called ``all-about-me.rst`` or something appropriate. Perhaps it might
 look like::
 
 
-        ############
-        All about me
-        ############
+    ############
+    All about me
+    ############
 
-        I'm Daniele Procida, a Django user and developer.
+    I'm Daniele Procida, a Django user and developer.
 
-        I've contributed to:
+    I've contributed to:
 
-        *   django CMS
-        *   Arkestra
-        *   Django
+    *   django CMS
+    *   Arkestra
+    *   Django
 
 Sphinx needs to know about it, so in ``index.rst``, edit the ``.. toctree::``
 section to add the ``all-about-me`` page::
@@ -232,9 +235,10 @@ render and host your documents for you automatically.
 
 It will update every night, but you can do better still: on GitHub:
 
-#.  select **settings** for your project
-#.  choose **Service Hooks**
-#.  enable ``ReadTheDocs``
+#.  select **settings** for your project (not for your account) in the
+    navigation panel on the right-hand side
+#.  choose **Webhooks & Services**
+#.  enable ``ReadTheDocs`` under **Add Service** dropdown
 
 ... and now, every time you push documents to GitHub, Read the Docs will be
 informed that you have new documents to be published. It's not magic, but it's
