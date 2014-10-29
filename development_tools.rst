@@ -160,16 +160,17 @@ Below are a list of important commands that you should be comfortable with.
 
 Exercises
 ---------
-#. Create a directory called **foo**
-#. Go inside the directory and create a file called **notes.txt** and in that write
-a message e.g. "Hello terminal".
-#. Execute the following command ``{Path to file}/bin/directory.sh``
+
+1. Create a directory called **foo**.
+2. Go inside the directory and create a file called **notes.txt**
+   and in that write a message e.g. "Hello terminal".
+#. Execute the following command ``{Path to file}/bin/directory.sh``.
 
 .. tip:: Don't forget the path replace {Path to file} with the correct path string
 
-
 Software Package Managers
 =========================
+
 So far in the course we have learned how to set up a fresh Ubuntu virtual
 machine and how to use some of the basic built in shell commands. Plain Ubuntu
 is extremely powerful and we can do a lot with it but at some point, whether
