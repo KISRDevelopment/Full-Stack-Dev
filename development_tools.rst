@@ -166,7 +166,9 @@ Exercises
    and in that write a message e.g. "Hello terminal".
 #. Execute the following command ``{Path to file}/bin/directory.sh``.
 
-.. tip:: Don't forget the path replace {Path to file} with the correct path string
+.. tip:: **{Path to file}** is a place holder don't forget to change it with the
+         correct path.
+
 
 Software Package Managers
 =========================
