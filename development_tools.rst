@@ -160,8 +160,12 @@ Below are a list of important commands that you should be comfortable with.
 
 Exercises
 ---------
-Now, launch the terminal and create a directory called ``foo`` and change your
-path to it.
+#. Create a directory called **foo**
+#. Go inside the directory and create a file called **notes.txt** and in that write
+a message e.g. "Hello terminal".
+#. Execute the following command ``{Path to file}/bin/directory.sh``
+
+.. tip:: Don't forget the path replace {Path to file} with the correct path string
 
 
 Software Package Managers
