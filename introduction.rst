@@ -54,6 +54,7 @@ Modern Front-End frameworks
 We have seen the big shift in the web from HTML 4 to HTML5 which has built-in
 APIs to help you accomplish many tasks to built a richer web application.
 This has resulted in a variety of front-end MVC frameworks such as:
+    
     - `Polymer <https://www.polymer-project.org/>`_,
     - `AngularJS <https://angularjs.org/>`_,
     - `React <http://facebook.github.io/react/index.html>`_, 
@@ -63,6 +64,7 @@ Modern Development Frameworks
 
 The changing computing world has led to and been led by
 the fast growing world of web development frameworks such as:
+    
     - `NodeJS <http://nodejs.org/>`_,
     - `Django <https://www.djangoproject.com/>`_,
     - `RoR <http://rubyonrails.org/>`_ 

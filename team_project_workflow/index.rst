@@ -62,7 +62,7 @@ Contents
    documentation
    Contributing your work <contributing>
    Cheatsheet - a handy summary of key commands and techniques <cheatsheet>
-   A record of people who attended a workshop or followed the tutorial <attendance_record>
+   A record of people who attended a workshop or followed the tutorial <attendees_and_learners>
    Notes for anyone planning a workshop <notesforplanners>
 
 Credits
