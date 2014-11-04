@@ -34,6 +34,8 @@ Exercises
 #. Configure the RAM to be allocated
 #. Configure a hard drive for the image
 
+.. todo:: Create an image of the VM?
+
 Command Line Interface
 ======================
 
@@ -211,7 +213,8 @@ Exercises
 
 More Information:
 -----------------
-There are many more package managers than we mentioned in this section.
+There are many more package managers than we mentioned in this section
+depending on what kind of web development you are doing.
 We would recomment looking at:
 
 - npm (node.js)
@@ -237,9 +240,6 @@ Exercises
 #. Write the following in it "|dummy_text|".
 #. Save and Exit from the text editor.
 
-Software Configuration
-======================
-.. todo:: Installing Nginx, PostgreSQL, Redis,
 
 Documentation
 =============
@@ -250,6 +250,33 @@ There are many documentation generator programs e.g.
 `javadoc <http://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/javadoc.html>`_,
 `Doxygen <http://www.stack.nl/~dimitri/doxygen/>`_, and
 `Sphinx <http://sphinx-doc.org/>`_.
+
+Basic Stack Configuration Exercise
+==================================
+In this final section  we are going to use some of the tools we looked at to 
+set up a very basic stack consisting of a virtual machine running a 
+webserver that will serve up a single page that interacts with a database.
+
+.. todo:: Insert a diagram of this stack.
+
+1. Setup a Virtual machine
+----------------------------------
+At this point you should already have a virtual machine up and running
+but if you don't, set one up using the image you created on the first day
+of this course.
+
+2. Installing and Configuring PostgreSQL
+---------------------------------------
+.. todo:: PostgreSQL
+
+3. Installing and Configuring nginx
+-----------------------------------
+.. todo:: nginx
+
+4. Serving Our Basic Content
+----------------------------
+
+.. todo:: look into doing something similar to this: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn
 
 
 .. [#w1] `Wikipedia <http://en.wikipedia.org/wiki/Virtual_machine>`_
