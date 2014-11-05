@@ -2,17 +2,30 @@
 Stack Configuration Exercise
 ############################
 
-.. todo:: copy over intro 
+In this exercise we are going to use many of the tools we have
+learned about during the week to set up our first stack.
+
+This stack will run on a virtual machine and consist of the
+following components:
+
+- Application Framework (Django)
+- Application Server (Gunicorn)
+- Web Server (NGINX)
+- Database (PostgreSQL)
+
+.. todo:: Insert a diagram of this stack
 
 Step One: Setup Your Virtual Machine
 ====================================
 
-.. todo:: copy section on vm and updates
+At this point you should already have a virtual machine up and 
+running but if you don't, set one up using the image you created 
+on the first day of this course.
 
 Step Two: Install and Create Virtualenv
 =======================================
 
-In Phase II we will go into more details about how to install, configure and
+In :ref:`Phase II <team_project_workflow>`  we will go into more details about how to install, configure and
 use python virtual environments but for now just use the following commands.
 
 Install virtualenv::
@@ -21,184 +34,200 @@ Install virtualenv::
 
 Create a virtualenv for our python packages::
 
-        sudo virtualenv <path>
+        sudo virtualenv ~/myenv
 
 .. todo:: Link Phase II. Replace <path>
 
+Step Three: Install and Configure PostgreSQL
+============================================
 
-Sphinx
-======
+Most Django users prefer to use PostgreSQL as their database server. It is much more robust than MySQL and the
+Django ORM works much better with PostgreSQL than MySQL, MSSQL, or others.
 
-Install Sphinx
---------------
+Install
+-------
 
-::
+First we need to install dependencies for PostgreSQL to work with Django::
 
-    pip install sphinx
+        sudo apt-get install libpq-dev python-dev
 
-It might take a minute or so, it has quite a few things to download and install.
+Then we install PostgreSQL itself::
 
-sphinx-quickstart
------------------
+        sudo apt-get install postgresql postgresql-contrib
 
-``sphinx-quickstart`` will set up the source directory for your documentation.
-It'll ask you a number of questions. Mostly you can just accept the defaults
-it offers, and some are just obvious, but there are some you will want to set
-yourself as noted below::
+Configure
+---------
 
-    sphinx-quickstart
+Now we can start configuring PostgrSQL. We need to create a database, create a user, and grant the user we created 
+access to the database we created. Start off by running the following command::
 
-Root path for the documentation
-    ``docs``
+        sudo su - postgres
 
-Project name
-    ``<your name>'s first docs``, or the name of your application
+Your terminal prompt should now say `postgres@yourserver`. Run the following command to create a database::
 
-Source file suffix
-    ``.rst`` is the default. (Django's own documentation uses ``.txt``. It
-    doesn't matter too much.)
+        createdb mydb
 
-You'll find a number of files in your ``docs`` directory now, including
-``index.rst``. Open that up.
+You now have a database named mydb. Now create a database user::
 
+        createuser -P
 
-Using Sphinx & reStructuredText
-===============================
+You will now be met with a series of 6 prompts. The first one will ask you for the name of the new user. Use whatever
+name you would like. The next two prompts are for your password and confirmation of password for the new user. 
+For the last 3 prompts just enter "n" and hit "enter". This just ensures your new users only has access to what you
+give it access to and nothing else. Now activate the PostgreSQL command line interface::
 
-reStructuredText elements
--------------------------
+        psql
 
-Sphinx uses reStructuredText. http://sphinx-doc.org/rest.html#rst-primer will tell you most of what
-you need to know to get started. Focus on the basics:
+Grant the new user access to the new database::
 
-*   paragraphs
-*   lists
-*   headings ('sections', as Sphinx calls them)
-*   quoted blocks
-*   code blocks
-*   emphasis, strong emphasis and literals
+        GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 
-Edit a page
------------
+You now have a PostgreSQL database and a user to access that database with.
 
-Create an **Introduction** section in the ``index.rst`` page, with a little text
-in it; save it.
+Step Four: Install Django and Create a Project
+===============================================
 
-Create a new page
------------------
+Install
+-------
 
-You have no other pages yet. In the same directory as ``index.rst``, create
-one called ``all-about-me.rst`` or something appropriate. Perhaps it might
-look like::
+We activate our virtualenv before we install any python packages::
 
+        source ~/myenv/bin/activate
 
-    ############
-    All about me
-    ############
+You should now see that "(myenv)" has been appended to the beginning of your terminal prompt.
+This will help you to know when your virtualenv is active and which virtualenv is active.
 
-    I'm Daniele Procida, a Django user and developer.
+We can now install Django in our virtualenv using pip::
 
-    I've contributed to:
+        pip install django
 
-    *   django CMS
-    *   Arkestra
-    *   Django
+Configure a New Project
+-----------------------
 
-Sphinx needs to know about it, so in ``index.rst``, edit the ``.. toctree::``
-section to add the ``all-about-me`` page::
+With django installed we can now create a new project to test that our stack is working.
+First change to the directory where you want your project source to live (we chose home `~`)::
 
-    .. toctree::
-       :maxdepth: 2
+        cd ~
 
-       all-about-me
+Now run the following command to create a project directory::
 
-Save both pages.
+        djang-admin.py startproject myproject
 
-Render your documentation
--------------------------
+If we want django to talk to our database, we need to install a backend for PostgreSQL::
 
-In the ``docs`` directory::
+        pip install psycopg2
 
-    make html
+Now we can edit the django database settings in the settings.py file using a command line editor::
 
-This tells Sphinx to render your source pages. *Pay attention to its warnings*
-- they're helpful!
+        cd ~/myproject/myproject
+        vim settings.py
 
-.. note::
-    Sphinx can be fussy, and sometimes about things you weren't expecting. For
-    example, you well encounter something like::
+Find the database settings and edit them to look like this::
 
-        WARNING: toctree contains reference to nonexisting document u'all-about-me'
-        ...
-        checking consistency...
-        <your repository>/my-first-docs/docs/all-about-me.rst::
-        WARNING: document isn't included in any toctree
+        DATABASES = {
+                'default': {
+                            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+                            'NAME': 'mydb',                      # Or path to database file if using sqlite3.
+                            # The following settings are not used with sqlite3:
+                            'USER': 'myuser',
+                            'PASSWORD': 'password',
+                            'HOST': 'localhost',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
+                            'PORT': '',                      # Set to empty string for default.
+                }
+        }
 
-    Quite likely, what has happened here is that you indented ``all-about-me``
-    in your ``.. toctree::`` with *four* spaces, when Sphinx is expecting
-    *three*.
+Save and exit the file. Then move up to your main project directory and run django's database configurtion tool::
 
-If you accepted the ``sphinx-quickstart`` defaults, you'll find the rendered
-pages in ``docs/_build/html``. Open the ``index.html`` it has created in your
-browser. You should find in it a link to your new ``all-about-me`` page too.
+        cd ~/myproject/
+        python manage.py syncdb
 
-Publishing your documentation
-=============================
+You should see some output describing what tables were installed, followed by a prompt asking if you want to create a superuser.
+Just say no for now.
 
-Exclude unwanted rendered directories
--------------------------------------
+Step Five: Install and Configure Gunicorn
+=========================================
 
-Remember ``.gitignore``? It's really useful here, because you don't want to
-commit your *rendered* files, just the source files.
+Gunicorn is a very powerful Python WSGI HTTP server.
 
-In my ``.gitignore``, I make sure that directories I don't want committed are
-listed. Check that::
+Install
+-------
 
-    _build
-    _static
-    _templates
+Gunicorn is a python package so activate your virtualenv and install it using pip::
 
-are listed in ``.gitignore``.
+        source ~/myenv/bin/activate
+        pip install gunicorn
 
-Add, commit and push
---------------------
+Configure
+---------
 
-``git add`` the files you want to commit; commit them, and push to GitHub.
+For now we are going to configure gunicorn using the most basic configuration with default settings::
 
-If this is your first ever push to GitHub for this project, use::
+        gunicorn --bind localhost:8001 myproject.wsgi:application
 
-    git push origin master
+Now go to your web browser and visit localhost:8001 and see what you get. 
+You should get the Django welcome screen.
 
-otherwise::
+Step Six: Install and Configure NGINX
+=====================================
 
-    git push origin first-docs # or whatever you called this branch
+NGINX is an incredibly fast and light-weight web server. We will use it to serve up our static files for 
+our Django app. 
 
-Now have a look at the ``.rst`` documentation files on GitHub. GitHub does a
-good enough job of rendering the files for you to read them at a glance,
-though it doesn't always get it right (and sometimes seems to truncate them).
+Install
+-------
 
-readthedocs.org
----------------
+To install nginx just run this command::
 
-However, we want to get them onto Read the Docs. So go to
-https://readthedocs.org, and sign up for an account if you don't have one.
+        sudo apt-get install nginx
 
-You need to **Import** a project: https://readthedocs.org/dashboard/import/.
+Configure
+---------
 
-Give it the details of your GitHub project in the **repo** field -
-``git@github.com:<your git username>/my-first-docs.git``, or whatever it is -
-and hit **Create**.
+Make sure that nginx is running::
 
-And now Read the Docs will actually watch your GitHub project, and build,
-render and host your documents for you automatically.
+        sudo service nginx start
 
-It will update every night, but you can do better still: on GitHub:
+We're going to be using NGINX to serve our static files so first we need to decide where our static files
+will live. Edit the django settings.py file and change STATIC_ROOT to the following::
 
-#.  select **settings** for your project (not for your account) in the
-    navigation panel on the right-hand side
-#.  choose **Webhooks & Services**
-#.  enable ``ReadTheDocs`` under **Add Service** dropdown
+        STATIC_ROOT = '/home/{{ user }}/static/'
 
-... and now, every time you push documents to GitHub, Read the Docs will be
-informed that you have new documents to be published. It's not magic, but it's
-pretty close.
+.. tip:: Remember to replace {{ user }} with your own username on your VM
+
+Now we can set up NGINX to handle the files in our static directory.
+Open a new NGINX config file::
+
+        sudo vim /etc/nginx/sites-available/myproject
+
+Now add the following to the file::
+
+        server {
+                server_name localhost;
+                
+                access_log off;
+
+                location /static/ {
+                        alias /opt/myenv/static/;
+                }
+
+                location / {
+                        proxy_pass http://127.0.0.1:8001;
+                        proxy_set_header X-Forwarded-Host $server_name;
+                        proxy_set_header X-Real-IP $remote_addr;
+                        add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
+                }
+        }
+
+Now we need to set up a symbolic link in the /etc/nginx/sites-enabled directory that points to this 
+configuration file. That is how NGINX knows this site is active. Change directories to /etc/nginx/sites-enabled like this::
+
+        cd /etc/nginx/sites-enabled
+        sudo ln -s ../sites-available/myproject
+
+Now restart NGINX::
+
+        sudo service nginx restart
+
+And that's it! You now have Django installed and working with PostgreSQL and your app is web accessible with NGINX 
+serving static content and Gunicorn serving as your app server.
+
