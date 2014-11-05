@@ -253,8 +253,8 @@ There are many documentation generator programs e.g.
 
 Basic Stack Configuration Exercise
 ==================================
-In this final section  we are going to use some of the tools we looked at to 
-set up a very basic stack consisting of a virtual machine running a 
+In this final section  we are going to use some of the tools we looked at to
+set up a very basic stack consisting of a virtual machine running a
 webserver that will serve up a single page that interacts with a database.
 
 .. todo:: Insert a diagram of this stack.
@@ -266,7 +266,7 @@ but if you don't, set one up using the image you created on the first day
 of this course.
 
 2. Installing and Configuring PostgreSQL
----------------------------------------
+----------------------------------------
 .. todo:: PostgreSQL
 
 3. Installing and Configuring nginx
