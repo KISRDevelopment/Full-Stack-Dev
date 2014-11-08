@@ -45,7 +45,7 @@ Contents
  development_tools/index
  team_project_workflow/index
  complete_web_dev/index
- :maxdepth: 1
+ :maxdepth: 3
 
 
 
