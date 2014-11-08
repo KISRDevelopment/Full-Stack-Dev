@@ -25,7 +25,7 @@ on the first day of this course.
 Step Two: Install and Create Virtualenv
 =======================================
 
-In :ref:`Phase II <team_project_workflow>`  we will go into more details about how to install, configure and
+In :doc:`Phase II </team_project_workflow/index>`  we will go into more details about how to install, configure and
 use python virtual environments but for now just use the following commands.
 
 Install virtualenv::
