@@ -38,7 +38,7 @@ over the web.
 System parts
 ------------
 
-A. back-end
+- Back-End
     - Operating System (OS).
     - Firewall.
     - Web server.
@@ -46,7 +46,7 @@ A. back-end
     - Caches.
     - Message queuing software.
     - Application.
-#. Front-end
+- Front-End
     - HTML.
     - CSS.
     - JavaScript.

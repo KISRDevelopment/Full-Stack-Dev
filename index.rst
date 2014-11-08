@@ -10,9 +10,7 @@ In this course we will explore the concept of Full Stack Development. The
 course is divided into three main parts:
 
 - Development Tools
-
 - Team Project Workflow
-
 - Complete Web development
 
 The objective of the course is to make you familiar with the terminology
@@ -44,10 +42,10 @@ Contents
 
 .. toctree::
  introduction
- development_tools
+ development_tools/index
  team_project_workflow/index
- complete_web_dev
- :maxdepth: 2
+ complete_web_dev/index
+ :maxdepth: 1
 
 
 

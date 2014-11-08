@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ################################
-Phase II - Team Project Workflow
+Phase II: Team Project Workflow
 ################################
 
 Introduction
