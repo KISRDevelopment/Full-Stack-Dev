@@ -99,10 +99,10 @@ Below are a list of important commands that you should be comfortable with.
     Be careful when passing paths!
 
     Paths can be:
-        - **Absolute Paths** relative to root
-          e.g. ``/etc/init/``, ``~/Desktop/bar.py``
-        - **Realtive Paths** from your current working directory
-          e.g. ``../foo/bar/``, ``temp/stuff/awesome.txt``
+        - | **Absolute Paths** relative to root
+          | e.g. ``/etc/init/``, ``~/Desktop/bar.py``
+        - | **Realtive Paths** from your current working directory
+          | e.g. ``../foo/bar/``, ``temp/stuff/awesome.txt``
 
 - | **nano**
   | Nano is an easy to use terminal text editor:
