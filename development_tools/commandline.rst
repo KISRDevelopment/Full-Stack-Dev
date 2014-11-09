@@ -131,16 +131,35 @@ Below are a list of important commands that you should be comfortable with.
   | ``ls | grep ""``
 
 - | **>**
+  | Redirect to charactor; it redirect the output of the command to a file
+  | ``echo Hello > foo.txt``
 
 - | **>>**
+  | Append charactor; it appends the output to a file
+  | ``echo Hello >> foo.txt``
 
 - | **<**
+  | Input in Charactor; it inputs the text of a file to the command
+  | ``cat < foo.txt``
+
+- | **``** or **${}**
+  | Backticks command; which execute the command inside it and return the output
+  | ``cat `ls *txt```
 
 - | **env**
-  |
+  | Prints out all the environments variables
+  | ``env``
 
 - | **export**
-  |
+  | Export a local varialble to become a environment variable
+  | ``export VAR``
+
+- | **ifconfig**
+  | To check the network cards and the ip address
+
+- | **alias**
+  | To alias command and modify them
+  | ``alias l="ls -al"``
 
 Exercises
 =========
@@ -152,5 +171,9 @@ Exercises
 
 .. tip:: **{Path to file}** is a place holder don't forget to change it with the
          correct path.
+
+
+Dotfiles
+========
 
 .. [#less] `Less history <http://en.wikipedia.org/wiki/Less_%28Unix%29#History>`_
