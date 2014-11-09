@@ -42,6 +42,10 @@ Below are a list of important commands that you should be comfortable with.
   | Make Directory:
   | ``mkdir bar`` creates a directory called bar
 
+- | **echo**
+  | Takes a string of text and prints it to the ``stdout``
+  | ``echo Hello world``
+
 - | **cat**
   | Concatenate files and prints them to ``stdout``:
   | ``cat file1 file2``
@@ -66,22 +70,6 @@ Below are a list of important commands that you should be comfortable with.
   | Copy file or directory from one location to another:
   | ``cp file1 Documents/``
   | ``cp -R /tmp Documents/tmp``
-
-- | **grep**
-  | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
-  | in text. It's a powerful if you know regular expresion:
-  | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
-
-.. seealso:: Take a look at the `Python Docs <https://docs.python.org/2/howto/regex.html>`_ for more information
-
-- | **ssh**
-  | SecureShell is a program that connects you to remote computers and execute
-  | commands on them:
-  | ``ssh alice@foo.com``
-
-- | **scp**
-  | Secure copy like FTP but uses SSH protocol to transmit data:
-  | ``scp words.txt alice@foo.com:Desktop/store``
 
 - | **nano**
   | Nano is an easy to use terminal text editor:
@@ -119,9 +107,40 @@ Below are a list of important commands that you should be comfortable with.
   | Sort sorts text:
   | ``sort foo``
 
+- | **grep**
+  | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
+  | in text. It's a powerful if you know regular expresion:
+  | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
+
+.. seealso:: Take a look at the `Python Docs <https://docs.python.org/2/howto/regex.html>`_ for more information
+
+- | **ssh**
+  | SecureShell is a program that connects you to remote computers and execute
+  | commands on them:
+  | ``ssh alice@foo.com``
+
+- | **scp**
+  | Secure copy like FTP but uses SSH protocol to transmit data:
+  | ``scp words.txt alice@foo.com:Desktop/store``
+
 - | **sudo**
   | Super User DO is a command that escalate and run the giving command as **root**
 
+- | **|**
+  | The Pipe charactor which takes the output of the left command and inputs it to the right command
+  | ``ls | grep ""``
+
+- | **>**
+
+- | **>>**
+
+- | **<**
+
+- | **env**
+  |
+
+- | **export**
+  |
 
 Exercises
 =========
