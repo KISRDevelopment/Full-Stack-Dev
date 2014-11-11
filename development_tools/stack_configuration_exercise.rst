@@ -188,7 +188,8 @@ Make sure that nginx is running::
         sudo service nginx start
 
 We're going to be using NGINX to serve our static files so first we need to decide where our static files
-will live. Edit the django settings.py file and change STATIC_ROOT to the following::
+will live. Edit the django settings.py file and add STATIC_ROOT setting it
+to the following::
 
         STATIC_ROOT = '/home/{{ user }}/static/'
 
