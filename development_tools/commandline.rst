@@ -182,83 +182,141 @@ Below are a list of important commands that you should be comfortable with.
 - | **man**
   | Return the help manual for any command in the system:
   | ``man shell-command``
+  |
 
 - | **find**
   | Find is a powerful command. Take a look at the manual of ``find`` to see all
   | the options that you can use with it:
   | ``find . -type f -name foo`` looks for a file that's named foo
+  |
 
 - | **diff**
   | Differences between two files. The command ``diff`` prints out the difference
   | between two files:
   | ``diff v1/foo1 v2/foo1``
+  |
 
 - | **comm**
   | Common is a command that compares two files and print the common bytes
   | between them:
   | ``comm v1/foo1 v2/foo1``
+  |
 
 - | **head**
   | Head prints out first lines of a file:
   | ``head foo.txt``
+  |
 
 - | **tail**
   | Tail is simliar to head but it prints out the last lines of a file:
   | ``tail foo.txt``
+  |
 
 - | **sort**
   | Sort sorts text:
   | ``sort foo``
+  |
+
+- | **\* - The Wildcard**
+  | ``*`` is known as the wildcard because it matches everything.
+  | It's great when you want to do a command on a set of files all at once:
+  | ``ls *.py`` lists all the files in the current directory ending in ``.py``
+  | ``rm -r h*`` removes all files and directories beginning with ``h``
+  | ``rm h*.*`` removes only files beginning with ``h``
+  | Exercise:
+
+    - Create the following files in ``temp``:
+        - ``ex12.txt``
+        - ``ex13.txt``
+        - ``ex14.py``
+        - ``stupid.vb``
+        - ``useless.vb``
+        - ``wasteoftime.vb``
+    - List all the .txt files in ``temp``.
+    - List all the files that begin with ``ex``.
+    - Delete all the ``vb`` files!
+    - Use ``find`` and ``less`` to see all the ``.txt`` files under your ``home`` directory.
+
+.. hint:: 
+    You will need a ``|`` pipe for that last exercise
 
 - | **grep**
-  | Grep is a pattern search that uses `regular expresion <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
-  | in text. It's a powerful if you know regular expresion:
-  | ``grep 'this' words.txt`` looks for the word this inside a file named words.txt
+  | Grep is a pattern search that uses `regular expressions <http://en.wikipedia.org/wiki/Regular_expression>`_ to look for a pattern
+  | in text. It's powerful if you know regular expressions:
+  | ``grep this words.txt`` looks for the word ``this`` inside a file named ``words.txt``
+  | Exercise:
+
+    - Create a file in ``temp`` called ``newfile.txt`` with the following text::
+
+        This is a new file.
+        This is a new file.
+        This is a new file.
+
+    - Create another file called ``oldfile.txt`` but with::
+
+        This is an old file.
+        This is an old file.
+        This is an old file.
+
+    - Search for all occurences of the word ``new`` in all the ``.txt`` files in ``temp``.
+    - Search for all occurences of ``old``.
+    - Search for all occurences of ``file``.
+    - How would you search for the words ``This is``? 
+
+.. hint:: 
+    You can quickly type text into a file using ``cat > file.txt``
+
+    This will overwrite ``file.txt`` with whatever you type until you close the file using ``CTRL-c``.
+ 
 
 .. seealso:: Take a look at the `Python Docs <https://docs.python.org/2/howto/regex.html>`_ for more information
+
+- | **env**
+  | Prints out all the environments variables
+  | ``env``
+  | Exercise:
+
+    - Print all your environment variables.
+    - Use ``|`` and ``grep`` to print only the variables that have your username in them.
+
+- | **export**
+  | Export a local varialble to become an environment variable
+  | ``export VAR``
+  | Exercises:
+  
+    - Create an environment variable called ``TESTING`` and set it to ``"1 2 3"``.
+    - ``echo`` your new varialble.
+
+.. note:: Environment variables are reset every time a new terminal session starts.
 
 - | **ssh**
   | SecureShell is a program that connects you to remote computers and execute
   | commands on them:
   | ``ssh alice@foo.com``
+  |
 
 - | **scp**
   | Secure copy like FTP but uses SSH protocol to transmit data:
   | ``scp words.txt alice@foo.com:Desktop/store``
+  |
 
 - | **sudo**
   | Super User DO is a command that escalate and run the giving command as **root**
+  |
 
 - | **``** or **${}**
   | Backticks command; which execute the command inside it and return the output
   | ``cat `ls *txt```
-
-- | **env**
-  | Prints out all the environments variables
-  | ``env``
-
-- | **export**
-  | Export a local varialble to become a environment variable
-  | ``export VAR``
+  |
 
 - | **ifconfig**
   | To check the network cards and the ip address
+  |
 
 - | **alias**
   | To alias command and modify them
   | ``alias l="ls -al"``
-
-Exercises
-=========
-
-1. Create a directory called **foo**.
-2. Go inside the directory and create a file called **notes.txt**
-   and in that write a message e.g. "Hello terminal".
-#. Execute the following command ``{Path to file}/bin/directory.sh``.
-
-.. tip:: **{Path to file}** is a place holder don't forget to change it with the
-         correct path.
-
+  |
 
 Dotfiles
 ========
