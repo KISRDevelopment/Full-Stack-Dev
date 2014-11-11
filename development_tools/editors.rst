@@ -68,3 +68,7 @@ Exercises
 
 #. Save and Exit from the text editor.
 
+Vim Exercise
+------------
+#. Launch your terminal and follow and the instructions.
+#. Finish all the 7 chapters.
