@@ -34,7 +34,7 @@ Install virtualenv::
 
 Create a virtualenv for our python packages::
 
-        sudo virtualenv ~/myenv
+        virtualenv ~/myenv
 
 .. todo:: Link Phase II. Replace <path>
 
@@ -69,7 +69,7 @@ Your terminal prompt should now say `postgres@yourserver`. Run the following com
 
 You now have a database named mydb. Now create a database user::
 
-        createuser -P
+        createuser -P <usrname>
 
 You will now be met with a series of 6 prompts. The first one will ask you for the name of the new user. Use whatever
 name you would like. The next two prompts are for your password and confirmation of password for the new user. 
@@ -202,7 +202,7 @@ Open a new NGINX config file::
 Now add the following to the file::
 
         server {
-                server_name localhost;
+                server_name {{your ip}};
                 
                 access_log off;
 
@@ -212,9 +212,7 @@ Now add the following to the file::
 
                 location / {
                         proxy_pass http://127.0.0.1:8001;
-                        proxy_set_header X-Forwarded-Host $server_name;
-                        proxy_set_header X-Real-IP $remote_addr;
-                        add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
+                        proxy_set_header Host $host;
                 }
         }
 
