@@ -69,7 +69,9 @@ Your terminal prompt should now say `postgres@yourserver`. Run the following com
 
 You now have a database named mydb. Now create a database user::
 
-        createuser -P
+        createuser -P {{username}}
+
+.. note:: Replace the place holder {{username}} with the new username without {{}}
 
 You will now be met with a series of 6 prompts. The first one will ask you for the name of the new user. Use whatever
 name you would like. The next two prompts are for your password and confirmation of password for the new user. 
@@ -100,6 +102,8 @@ This will help you to know when your virtualenv is active and which virtualenv i
 We can now install Django in our virtualenv using pip::
 
         pip install django
+
+.. note:: After running this command you will have Django 1.7 installed in your system
 
 Configure a New Project
 -----------------------
@@ -141,6 +145,8 @@ Save and exit the file. Then move up to your main project directory and run djan
         cd ~/myproject/
         python manage.py syncdb
 
+.. note:: Familiarize yourself wuth ``./manage.py makemigrations`` and ``./manage.py migrate`` commands
+
 You should see some output describing what tables were installed, followed by a prompt asking if you want to create a superuser.
 Just say no for now.
 
@@ -164,6 +170,10 @@ For now we are going to configure gunicorn using the most basic configuration wi
 
         gunicorn --bind localhost:8001 myproject.wsgi:application
 
+
+.. note:: | Please be careful it's a Python import syntax not a file system path 
+          | Also to make the command run in the background append **&** to the end of the line
+
 Now go to your web browser and visit localhost:8001 and see what you get. 
 You should get the Django welcome screen.
 
@@ -183,7 +193,7 @@ To install nginx just run this command::
 Configure
 ---------
 
-Make sure that nginx is running::
+Make sure that nginx is running:sten:
 
         sudo service nginx start
 
@@ -202,12 +212,13 @@ Open a new NGINX config file::
 Now add the following to the file::
 
         server {
+                listen 80; # to listen on the default HTTP port but you need to be root ;)
                 server_name localhost;
                 
                 access_log off;
 
                 location /static/ {
-                        alias /opt/myenv/static/;
+                        alias /home/{{user}}/static/;
                 }
 
                 location / {
@@ -224,10 +235,14 @@ configuration file. That is how NGINX knows this site is active. Change director
         cd /etc/nginx/sites-enabled
         sudo ln -s ../sites-available/myproject
 
+.. warning:: Dont' forget to disable the **default** website in ``/etc/nginx/site-enabled``
+
 Now restart NGINX::
 
         sudo service nginx restart
 
 And that's it! You now have Django installed and working with PostgreSQL and your app is web accessible with NGINX 
 serving static content and Gunicorn serving as your app server.
+
+.. tip:: | If it doesn't work that means you forgot to run gunicorn in the background
 
