@@ -301,11 +301,11 @@ Below are a list of important commands that you should be comfortable with.
   |
 
 - | **sudo**
-  | Super User DO is a command that escalate and run the giving command as **root**
+  | Super User DO is a command that escalates and runs the given command as **root**
   |
 
 - | **``** or **${}**
-  | Backticks command; which execute the command inside it and return the output
+  | Backticks command; which executes the command inside it and returns the output:
   | ``cat `ls *txt```
   |
 
@@ -318,7 +318,6 @@ Below are a list of important commands that you should be comfortable with.
   | ``alias l="ls -al"``
   |
 
-Dotfiles
-========
+.. seealso:: Here is a comprehensive `Command Line Cheatsheet <http://cli.learncodethehardway.org/bash_cheat_sheet.pdf>`_
 
 .. [#less] `Less history <http://en.wikipedia.org/wiki/Less_%28Unix%29#History>`_
