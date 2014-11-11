@@ -320,4 +320,18 @@ Below are a list of important commands that you should be comfortable with.
 
 .. seealso:: Here is a comprehensive `Command Line Cheatsheet <http://cli.learncodethehardway.org/bash_cheat_sheet.pdf>`_
 
+Dot files/directories
+=====================
+Dot files and directories play a big role in the Unix/Linux operating system. Once a file or directory starts with a **.** it will be hidden from the regular **ls** command, and to display it you need to run **ls** with **-a** flag. The flag display the all the files in the current directory. There are many special dotfiles that you need to be aware of. The list below lists couple of them.
+
+1. ~/.bashrc
+#. ~/.vimrc
+#. ~/.emacs
+#. ~/.bash_history
+
+Exercises
+=========
+run **ls -a ~** to display the files and try to get familiar with them
+
+
 .. [#less] `Less history <http://en.wikipedia.org/wiki/Less_%28Unix%29#History>`_
