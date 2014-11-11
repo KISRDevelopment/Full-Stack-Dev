@@ -34,7 +34,7 @@ Install virtualenv::
 
 Create a virtualenv for our python packages::
 
-        sudo virtualenv ~/myenv
+        virtualenv ~/myenv
 
 .. todo:: Link Phase II. Replace <path>
 
@@ -72,6 +72,7 @@ You now have a database named mydb. Now create a database user::
         createuser -P {{username}}
 
 .. note:: Replace the place holder {{username}} with the new username without {{}}
+=======
 
 You will now be met with a series of 6 prompts. The first one will ask you for the name of the new user. Use whatever
 name you would like. The next two prompts are for your password and confirmation of password for the new user. 
@@ -198,7 +199,8 @@ Make sure that nginx is running:sten:
         sudo service nginx start
 
 We're going to be using NGINX to serve our static files so first we need to decide where our static files
-will live. Edit the django settings.py file and change STATIC_ROOT to the following::
+will live. Edit the django settings.py file and add STATIC_ROOT setting it
+to the following::
 
         STATIC_ROOT = '/home/{{ user }}/static/'
 
@@ -213,7 +215,7 @@ Now add the following to the file::
 
         server {
                 listen 80; # to listen on the default HTTP port but you need to be root ;)
-                server_name localhost;
+                server_name {{your ip}};
                 
                 access_log off;
 
@@ -223,9 +225,7 @@ Now add the following to the file::
 
                 location / {
                         proxy_pass http://127.0.0.1:8001;
-                        proxy_set_header X-Forwarded-Host $server_name;
-                        proxy_set_header X-Real-IP $remote_addr;
-                        add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
+                        proxy_set_header Host $host;
                 }
         }
 
