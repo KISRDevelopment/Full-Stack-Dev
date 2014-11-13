@@ -9,7 +9,7 @@ This stack will run on a virtual machine and consist of the
 following components:
 
 - Application Framework (Django)
-- Application Server (Gunicorn)
+- Python WSGI HTTP Server (Gunicorn)
 - Web Server (NGINX)
 - Database (PostgreSQL)
 
