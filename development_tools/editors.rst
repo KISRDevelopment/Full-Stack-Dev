@@ -35,7 +35,6 @@ from the command line such as when you are SSHed into one of your production mac
 And you would use IDEs to set up, manage and develop an entire application and all its files
 locally such as developing a Django application.
 
-.. |dummy_text| replace:: 
 
 Exercises
 ---------
