@@ -36,6 +36,9 @@ executing it will display the same prompt again waiting for the next command.
 Now we will learn about the useful operations that **python** offers in the
 command line.
 
+Integer Operations
+==================
+
 .. code-block:: python
 
    >>> 3 + 7 # Addition
