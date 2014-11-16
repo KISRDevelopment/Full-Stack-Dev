@@ -110,8 +110,8 @@ if not on_rtd:
         html_theme = "sphinx_rtd_theme"
         html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
     except ImportError:
-        print("Install sphinx_rtd_theme using pip")
-        sys.exit(1)
+        print("Install sphinx_rtd_theme using pip\nWe will use the default theme")
+        html_theme = "default"
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
