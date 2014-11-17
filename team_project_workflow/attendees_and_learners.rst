@@ -18,6 +18,7 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Ebtisam
 * Muneera Aljeri
 * Musab Alshatti 
+* Abdulaziz Al-Massaeed
 
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
