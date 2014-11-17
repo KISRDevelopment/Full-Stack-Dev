@@ -7,15 +7,12 @@ or followed the tutorial in their own time.
 
 Workshops
 =========
-* Ghada Alnaqi <gnaqi@kisr.edu.kw>
 
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
-
-
+* Ghada Alnaqi 
 * Lulwah AlKulaib 
-
 * Nasser Hussain
 
 PyCon Ireland in Dublin, 13th October 2014
