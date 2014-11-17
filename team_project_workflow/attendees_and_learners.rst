@@ -7,7 +7,6 @@ or followed the tutorial in their own time.
 
 Workshops
 =========
-* Muneera Aljeri
 
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
@@ -15,8 +14,8 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Ghada Alnaqi 
 * Lulwah AlKulaib 
 * Nasser Hussain
-
-* Musab Alshatti <m93b85@gmail.com>
+* Muneera Aljeri
+* Musab Alshatti 
 
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
