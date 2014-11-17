@@ -8,6 +8,8 @@ or followed the tutorial in their own time.
 Workshops
 =========
 
+* Abdulaziz Al-Massaeed
+
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
 
