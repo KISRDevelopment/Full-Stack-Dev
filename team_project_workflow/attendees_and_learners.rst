@@ -16,6 +16,8 @@ Full Stack Development Course in Kuwait, 17th November 2014
 
 * Lulwah AlKulaib 
 
+* Nasser Hussain
+
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
 
