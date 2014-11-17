@@ -7,6 +7,7 @@ or followed the tutorial in their own time.
 
 Workshops
 =========
+* Muneera Aljeri
 
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
