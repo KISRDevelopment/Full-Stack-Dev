@@ -7,6 +7,7 @@ or followed the tutorial in their own time.
 
 Workshops
 =========
+* Ghada Alnaqi <gnaqi@kisr.edu.kw>
 
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
