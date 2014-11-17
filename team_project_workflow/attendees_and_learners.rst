@@ -8,6 +8,18 @@ or followed the tutorial in their own time.
 Workshops
 =========
 
+Full Stack Development Course in Kuwait, 17th November 2014
+-----------------------------------------------------------
+
+* Ghada Alnaqi 
+* Lulwah AlKulaib 
+* Nasser Hussain
+* Ebtisam
+* Muneera Aljeri
+* Musab Alshatti 
+* Abdulaziz Al-Massaeed
+* Nasser AlSnayen
+
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
 
