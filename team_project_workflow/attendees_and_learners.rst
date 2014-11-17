@@ -7,6 +7,7 @@ or followed the tutorial in their own time.
 
 Workshops
 =========
+* Muneera Aljeri
 
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
