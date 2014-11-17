@@ -8,6 +8,8 @@ or followed the tutorial in their own time.
 Workshops
 =========
 
+* Musab Alshatti <m93b85@gmail.com>
+
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
 
