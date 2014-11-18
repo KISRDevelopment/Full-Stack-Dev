@@ -14,15 +14,14 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Ghada Alnaqi 
 * Lulwah AlKulaib 
 * Nasser Hussain
-* Ebtisam
+* Ebtisam (e.al-slama@hotmail.com)https://github.com/ealsalamah
 * Muneera Aljeri
 * Musab Alshatti 
 * Abdulaziz Al-Massaeed
 * Nasser AlSnayen
 
 PyCon Ireland in Dublin, 13th October 2014
-------------------------------------------
-
+-----------------------------------------
 * Randal McGuckin <randal.mcguckin@gmail.com>
 * Laura Duggan https://github.com/labhra
 * Jenny McGee
