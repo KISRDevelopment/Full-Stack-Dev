@@ -11,6 +11,7 @@ Workshops
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
+* Aziz Alsaffar (alsaff1987@gmail.com) (@Octowl) (@awesomesauce)
 * Ghada Alnaqi 
 * Lulwah AlKulaib 
 * Nasser Hussain
