@@ -18,7 +18,7 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Ebtisam
 * Muneera Aljeri <mujeri@kisr.edu.kw> (https://github.com/muneera88) (@twitterAcc)
 * Musab Alshatti 
-* Abdulaziz Al-Massaeed
+* Abdulaziz Al-Massaeed (abdulaziz.almassaeed@ahliunited.com) (https://github.com/hackfoo) (Ext: 2009)
 * Nasser AlSnayen
 
 PyCon Ireland in Dublin, 13th October 2014
