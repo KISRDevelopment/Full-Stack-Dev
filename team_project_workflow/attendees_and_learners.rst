@@ -16,7 +16,7 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Nasser Hussain
 * Ebtisam
 * Muneera Aljeri
-* Musab Alshatti 
+* Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) @m93b85
 * Abdulaziz Al-Massaeed
 * Nasser AlSnayen
 
