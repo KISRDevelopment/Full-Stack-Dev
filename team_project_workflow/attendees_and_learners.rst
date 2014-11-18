@@ -11,7 +11,7 @@ Workshops
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
-* Ghada Alnaqi 
+* Ghada Alnaqi https://github.com/gnaqi <ghnaqi@gmail.com> <gnaqi@kisr.edu.kw>   
 * Lulwah AlKulaib 
 * Nasser Hussain <nasser.bader@outlook.com> https://github.com/nasser-bader
 * Ebtisam
