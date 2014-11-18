@@ -12,7 +12,7 @@ Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
 * Ghada Alnaqi
-* Lulwah AlKulaib <lkulaib@kisr.edu.kw> https://github.com/lalkulaib
+* Lulwah AlKulaib <lkulaib@kisr.edu.kw> https://github.com/lalkulaib (@lalkulaib)
 * Nasser Hussain
 * Ebtisam
 * Muneera Aljeri
