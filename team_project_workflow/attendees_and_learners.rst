@@ -18,7 +18,7 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Muneera Aljeri
 * Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) @m93b85
 * Abdulaziz Al-Massaeed
-* Nasser AlSnayen
+* Nasser AlSnayen (nasser.lc9@gmail.com) <https://github.com/LC9> "Insta:@Nalsnayen"
 
 PyCon Ireland in Dublin, 13th October 2014
 ------------------------------------------
