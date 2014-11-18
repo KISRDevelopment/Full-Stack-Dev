@@ -12,11 +12,11 @@ Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
 * Ghada Alnaqi https://github.com/gnaqi <ghnaqi@gmail.com> <gnaqi@kisr.edu.kw>   
-* Lulwah AlKulaib 
 * Nasser Hussain <nasser.bader@outlook.com> https://github.com/nasser-bader
+* Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) @m93b85
+* Lulwah AlKulaib <lkulaib@kisr.edu.kw> https://github.com/lalkulaib (@lalkulaib)
 * Ebtisam
 * Muneera Aljeri
-* Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) @m93b85
 * Abdulaziz Al-Massaeed
 * Nasser AlSnayen (nasser.lc9@gmail.com) <https://github.com/LC9> "Insta:@Nalsnayen"
 
