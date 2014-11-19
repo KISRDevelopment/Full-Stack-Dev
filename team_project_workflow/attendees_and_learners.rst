@@ -11,14 +11,14 @@ Workshops
 Full Stack Development Course in Kuwait, 17th November 2014
 -----------------------------------------------------------
 
-* Ghada Alnaqi https://github.com/gnaqi <ghnaqi@gmail.com> <gnaqi@kisr.edu.kw>   
+* Ghada Alnaqi https://github.com/gnaqi <ghnaqi@gmail.com>    
 * Nasser Hussain <nasser.bader@outlook.com> https://github.com/nasser-bader
-* Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) @m93b85
-* Lulwah AlKulaib <lkulaib@kisr.edu.kw> https://github.com/lalkulaib (@lalkulaib)
+* Musab Alshatti <m93b85@gmail.com> (https://githup.com/m93b85) 
+* Lulwah AlKulaib <lkulaib@kisr.edu.kw> https://github.com/lalkulaib 
 * Ebtisam (e.al-slama@hotmail.com)https://github.com/ealsalamah
-* Muneera Aljeri <mujeri@kisr.edu.kw> (https://github.com/muneera88) (@twitterAcc)
-* Abdulaziz Al-Massaeed (abdulaziz.almassaeed@ahliunited.com) (https://github.com/hackfoo) (Ext: 2009)
-* Nasser AlSnayen (nasser.lc9@gmail.com) <https://github.com/LC9> "Insta:@Nalsnayen"
+* Muneera Aljeri <mujeri@kisr.edu.kw> (https://github.com/muneera88)
+* Abdulaziz Al-Massaeed (abdulaziz.almassaeed@ahliunited.com) (https://github.com/hackfoo) 
+* Nasser AlSnayen (nasser.lc9@gmail.com) <https://github.com/LC9> 
 
 PyCon Ireland in Dublin, 13th October 2014
 -----------------------------------------
