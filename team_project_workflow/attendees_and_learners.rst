@@ -20,6 +20,11 @@ Full Stack Development Course in Kuwait, 17th November 2014
 * Abdulaziz Al-Massaeed (abdulaziz.almassaeed@ahliunited.com) (https://github.com/hackfoo) 
 * Nasser AlSnayen (nasser.lc9@gmail.com) <https://github.com/LC9> 
 
+Honor Guests
+------------
+* Kermit the frog
+* Captain Awesomesauce
+
 PyCon Ireland in Dublin, 13th October 2014
 -----------------------------------------
 * Randal McGuckin <randal.mcguckin@gmail.com>
