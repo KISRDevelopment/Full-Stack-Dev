@@ -1,7 +1,21 @@
 #######
 Vagrant
 #######
-Vagrant is a tool that help you create, provision, share and distroy virtual machines. Vagrant can interact with different hypervisors e.g. VirtualBox, VMware ...etc. Instead of you going and writing scripts to interact with your hypervisor softwre of choice, it does it for you. It has simple commands to launch and create VM. In this course, we will touch the surface of what it can do.
+
+In :doc:`Phase I <../development_tools/index>` we learned how to:
+
+    - Setup individual virtual machines
+    - Setup an environment with the software packages we needed
+    - Configure and network our machines
+    - Configure a basic stack
+
+And we did it all **manually** and **individually**!
+
+**Vagrant** is a tool that changes all of that by providing us with 
+a way **automate** the entire process using a single file that we can
+share along with the project code.
+
+Vagrant helps you create, provision, share and destroy virtual machines. Vagrant can interact with different hypervisors e.g. VirtualBox, VMware ...etc. Instead of you going and writing scripts to interact with your hypervisor softwre of choice, it does it for you. It has simple commands to launch and create VM. In this course, we will touch the surface of what it can do.
 
 Prerequisite
 ============
@@ -204,19 +218,6 @@ Provision is the way to set up your development environment. You can put your co
 
 .. note:: The script will install and start nginx with the default configuration. It should listen to port 80 on the guest machine and you should ``port-forward`` that port to a port on the host machine by changing the configuration in the VagrantFile.
 
-
-In :doc:`Phase I <../development_tools/index>` we learned how to:
-
-    - Setup individual virtual machines
-    - Setup an environment with the software packages we needed
-    - Configure and network our machines
-    - Configure a basic stack
-
-And we did it all **manually** and **individually**!
-
-**Vagrant** is a tool that changes all of that by providing us with 
-a way **automate** the entire process using a single file that we can
-share along with the project code.
 
 Tutorial
 ========
