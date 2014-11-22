@@ -1,6 +1,7 @@
-******
+######
 Python
-******
+######
+
 Python is an  general purpose object oriented programming language that was
 created by `Guido Van Rossum <http://en.wikipedia.org/wiki/Guido_van_Rossum>`_.
 The language has many implementations e.g. `CPython

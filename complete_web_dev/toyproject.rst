@@ -1,6 +1,6 @@
-===========
+###########
 Toy project
-===========
+###########
 
 .. todo::
     we need to explain the roles that need to be created for the team to function
