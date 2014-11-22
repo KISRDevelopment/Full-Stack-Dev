@@ -72,7 +72,6 @@ You now have a database named mydb. Now create a database user::
         createuser -P {{username}}
 
 .. note:: Replace the place holder {{username}} with the new username without {{}}
-=======
 
 You will now be met with a series of 6 prompts. The first one will ask you for the name of the new user. Use whatever
 name you would like. The next two prompts are for your password and confirmation of password for the new user. 

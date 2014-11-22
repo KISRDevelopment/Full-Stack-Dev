@@ -25,5 +25,6 @@ Exercise
 
 Let's create a Vagrantfile to set up the box we will need for our
 toy project. 
+
 .. todo:: What are the provisioning requirments for our box?
 

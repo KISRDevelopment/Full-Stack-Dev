@@ -46,11 +46,10 @@ Contents
 ========
 
 .. toctree::
+   vagrant
+   ansible
+   python
+   django
+   toyproject
    :maxdepth: 2
    :titlesonly:
-
-    vagrant
-    ansible
-    python
-    django
-    toyproject

@@ -26,7 +26,7 @@ Honor Guests
 * Captain Awesomesauce
 
 PyCon Ireland in Dublin, 13th October 2014
------------------------------------------
+------------------------------------------
 * Randal McGuckin <randal.mcguckin@gmail.com>
 * Laura Duggan https://github.com/labhra
 * Jenny McGee
