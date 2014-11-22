@@ -205,7 +205,7 @@ Provision is the way to set up your development environment. You can put your co
 .. note:: The script will install and start nginx with the default configuration. It should listen to port 80 on the guest machine and you should ``port-forward`` that port to a port on the host machine by changing the configuration in the VagrantFile.
 
 
-In :doc: `Phase I </development_tools/index.html>`_ we learned how to:
+In :doc:`Phase I <../development_tools/index>` we learned how to:
 
     - Setup individual virtual machines
     - Setup an environment with the software packages we needed
