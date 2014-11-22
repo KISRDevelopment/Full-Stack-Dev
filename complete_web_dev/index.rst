@@ -12,7 +12,7 @@ class mates. Please click on the link below to read the details of the project.
 .. toctree::
    python
    django
-   vegrant
+   vagrant
    ansible
    toyproject
    :maxdepth: 3
