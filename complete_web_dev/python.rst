@@ -72,3 +72,143 @@ Integer Operations
    -2
    >>> 1 ^ 10 # XOr operator
    11
+
+Complex numbers
+===============
+**Python** supports complex numbers by default. To use or create a complex number just append a ``j`` to a number.
+
+.. code-block:: python
+   
+   >>> 4 + 6j
+   (4+6j)
+
+Float point operations
+======================
+Just like integers, **Python** supports float point operations
+
+.. code-block:: python
+
+   >>> 0.5 + 6.9
+   7.4
+   >>> 7 / 3.0
+   2.3333333333333335
+   >>> 7 / 2.0
+   3.5
+   >>> 4 * 8.4
+   33.6
+   >>> .5 - 8.4
+   -7.9
+
+Boolean operations
+==================
+
+.. code-block:: python
+   
+   >>> True
+   True
+   >>> False
+   False
+   >>> True or False
+   True
+   >>> True and True
+   True
+   >>> True and False
+   False
+   >>> False or False
+   False
+   >>> not False or False
+   True
+
+
+Variables
+=========
+To create a variable in **Python**, you have to use the assignment operator which is ``=``. The has to start with latin alphabets or ``_`` 
+
+.. note:: This was changed in **Python 3** where you can use any unicode charector so you can do the following ``س = 10`` and **Python** would accept that.
+
+.. code-block:: python
+   
+   >>> x = 3
+   >>> _r = 100
+   >>> x
+   3
+   >>> _r
+   100
+   >>> y = x + _r
+   >>> y
+   103
+
+Strings
+=======
+**Python** would treat any thing inside ``"``, ``'`` or ``'''`` as a valid string.
+
+.. code-block:: python
+
+   >>> "This is a string"
+   'This is a string'
+   >>> 'Single quotes can be used like "'
+   'Single quotes can be used like "'
+   >>> x = """
+   ... This is a multiline string
+   ... The idea behind it is that you don't 
+   ... have to escape charactors
+   ... like ' or "
+   ... or even a new line \n
+   ... """
+   >>> x
+   '\nThis is a multiline string\nThe idea behind it is that you don\'t \nhave to escape charactors\nlike \' or "\nor even a new line \n\n'
+   >>> print x
+
+   This is a multiline string
+   The idea behind it is that you don't 
+   have to escape charactors
+   like ' or "
+   or even a new line 
+
+
+   >>> 
+
+Print
+=====
+**Python** has a keyword to print to the screen just like ``printf`` or ``cout`` in different languages. Print is very easy to use and it appends ``\n`` at the end of the output unless you append ``,`` where that behavior will be over written.
+
+.. code-block:: python
+
+   >>> y = "This is a line"
+   >>> g = "This is another line"
+   >>> print y
+   This is a line
+   >>> print g
+   This is another line
+   >>> print y,g
+   This is a line This is another line
+   >>> print y,g,
+   This is a line This is another line
+
+Functions
+=========
+To define a function is **Python**, you have to use the keyword ``def`` and then the name of the function. The name of the function can be any valid identifier. After the name of the function you have to add ``()`` to denotes function can be called without arguments or ``(x,y,z)`` to denotes a function that takes three arguments. Then, to start implementing the body of the function you have to end the function declaration with ``:``. The body of the function must be indented by four spaces.
+
+.. note:: The word **must** is from **PEP 8** to stay consistent across files. The previous paragraph assumes mulitline functions without ``;``
+
+.. code-block:: python
+   
+   >>> def main():
+   ...    print "Hello world"
+   ... 
+   >>> 
+   >>> main()
+   Hello world
+   >>> def another_main(x,y,z):
+   ...    return (x/y)**z
+   ... 
+   >>> 
+   >>> 
+   >>> another_main(4,6,2)
+   0
+   >>> another_main(40,6,2)
+   36
+   >>> another_main(40,6.0,2)
+   44.44444444444445
+
+.. note:: Because the language is dynamiclly typed I didn't have to specify the type for **x, y or z** and I can pass anything as **x, y and z**. So I passed integers or floats.
